@@ -14,7 +14,7 @@ module.exports = {
       session.user.username = user.username;
       res.status(200).send(session.user);
     } else {
-      res.status(500).send("Unauthorized");
+      res.status(500).send("oops");
     }
   },
   register: (req, res, next) => {
